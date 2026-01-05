@@ -1,0 +1,36 @@
+{
+  "event_key": "ChristmasWeekdayJan5",
+  "event_idx": 362,
+  "name": "Feria II temporis Nativitatis",
+  "color": [
+    "white"
+  ],
+  "color_lcl": [
+    "albus"
+  ],
+  "grade": 0,
+  "grade_lcl": "feria",
+  "grade_abbr": "f",
+  "grade_display": null,
+  "common": [],
+  "common_lcl": "",
+  "type": "mobile",
+  "date": "2026-01-05T00:00:00+00:00",
+  "year": 2026,
+  "month": 1,
+  "month_short": "Ian.",
+  "month_long": "Ianuarius",
+  "day": 5,
+  "day_of_the_week_iso8601": 1,
+  "day_of_the_week_short": "Fer. II",
+  "day_of_the_week_long": "Feria II",
+  "readings": {
+    "first_reading": "",
+    "responsorial_psalm": "",
+    "gospel_acclamation": "",
+    "gospel": ""
+  },
+  "psalter_week": 0,
+  "liturgical_season": "CHRISTMAS",
+  "liturgical_season_lcl": "Tempus Nativitatis"
+}

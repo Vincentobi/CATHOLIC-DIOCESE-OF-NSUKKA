@@ -1,0 +1,193 @@
+[
+  {
+    "event_key": "Advent1_vigil",
+    "event_idx": 1149,
+    "name": "Dominica Prima Adventus Missa in Vigilia",
+    "color": [
+      "purple"
+    ],
+    "color_lcl": [
+      "purpura"
+    ],
+    "grade": 7,
+    "grade_lcl": "celebratio altioris ordinis quam sollemnitatis",
+    "grade_abbr": "S✝",
+    "grade_display": "",
+    "common": [],
+    "common_lcl": "",
+    "type": "mobile",
+    "date": "2025-11-29T00:00:00+00:00",
+    "year": 2025,
+    "month": 11,
+    "month_short": "Nov.",
+    "month_long": "November",
+    "day": 29,
+    "day_of_the_week_iso8601": 6,
+    "day_of_the_week_short": "Sabb.",
+    "day_of_the_week_long": "Sabbato",
+    "readings": {
+      "first_reading": "",
+      "responsorial_psalm": "",
+      "second_reading": "",
+      "gospel_acclamation": "",
+      "gospel": ""
+    },
+    "liturgical_year": "ANNUM A",
+    "is_vigil_mass": true,
+    "is_vigil_for": "Advent1",
+    "psalter_week": 1,
+    "liturgical_season": "ADVENT",
+    "liturgical_season_lcl": "Tempus Adventus"
+  },
+  {
+    "event_key": "Advent1",
+    "event_idx": 616,
+    "name": "Dominica Prima Adventus",
+    "color": [
+      "purple"
+    ],
+    "color_lcl": [
+      "purpura"
+    ],
+    "grade": 7,
+    "grade_lcl": "celebratio altioris ordinis quam sollemnitatis",
+    "grade_abbr": "S✝",
+    "grade_display": "",
+    "common": [],
+    "common_lcl": "",
+    "type": "mobile",
+    "date": "2025-11-30T00:00:00+00:00",
+    "year": 2025,
+    "month": 11,
+    "month_short": "Nov.",
+    "month_long": "November",
+    "day": 30,
+    "day_of_the_week_iso8601": 7,
+    "day_of_the_week_short": "Dom.",
+    "day_of_the_week_long": "Dominica",
+    "readings": {
+      "first_reading": "",
+      "responsorial_psalm": "",
+      "second_reading": "",
+      "gospel_acclamation": "",
+      "gospel": ""
+    },
+    "liturgical_year": "ANNUM A",
+    "has_vigil_mass": true,
+    "has_vesper_i": true,
+    "has_vesper_ii": true,
+    "psalter_week": 1,
+    "liturgical_season": "ADVENT",
+    "liturgical_season_lcl": "Tempus Adventus"
+  },
+  {
+    "event_key": "AdventWeekday1Monday",
+    "event_idx": 705,
+    "name": "Feria II Hebdomadæ Primæ Adventus",
+    "color": [
+      "purple"
+    ],
+    "color_lcl": [
+      "purpura"
+    ],
+    "grade": 0,
+    "grade_lcl": "feria",
+    "grade_abbr": "f",
+    "grade_display": null,
+    "common": [],
+    "common_lcl": "",
+    "type": "mobile",
+    "date": "2025-12-01T00:00:00+00:00",
+    "year": 2025,
+    "month": 12,
+    "month_short": "Dec.",
+    "month_long": "December",
+    "day": 1,
+    "day_of_the_week_iso8601": 1,
+    "day_of_the_week_short": "Fer. II",
+    "day_of_the_week_long": "Feria II",
+    "readings": {
+      "first_reading": "",
+      "responsorial_psalm": "",
+      "gospel_acclamation": "",
+      "gospel": ""
+    },
+    "psalter_week": 1,
+    "liturgical_season": "ADVENT",
+    "liturgical_season_lcl": "Tempus Adventus"
+  },
+  {
+    "event_key": "AdventWeekday1Tuesday",
+    "event_idx": 706,
+    "name": "Feria III Hebdomadæ Primæ Adventus",
+    "color": [
+      "purple"
+    ],
+    "color_lcl": [
+      "purpura"
+    ],
+    "grade": 0,
+    "grade_lcl": "feria",
+    "grade_abbr": "f",
+    "grade_display": null,
+    "common": [],
+    "common_lcl": "",
+    "type": "mobile",
+    "date": "2025-12-02T00:00:00+00:00",
+    "year": 2025,
+    "month": 12,
+    "month_short": "Dec.",
+    "month_long": "December",
+    "day": 2,
+    "day_of_the_week_iso8601": 2,
+    "day_of_the_week_short": "Fer. III",
+    "day_of_the_week_long": "Feria III",
+    "readings": {
+      "first_reading": "",
+      "responsorial_psalm": "",
+      "gospel_acclamation": "",
+      "gospel": ""
+    },
+    "psalter_week": 1,
+    "liturgical_season": "ADVENT",
+    "liturgical_season_lcl": "Tempus Adventus"
+  },
+  {
+    "event_key": "StFrancisXavier",
+    "event_idx": 823,
+    "name": "Sancti Francisci Xavier, presbyteri",
+    "color": [
+      "white"
+    ],
+    "color_lcl": [
+      "albus"
+    ],
+    "grade": 3,
+    "grade_lcl": "Memoria obligatoria",
+    "grade_abbr": "M",
+    "grade_display": null,
+    "common": [
+      "Proper"
+    ],
+    "common_lcl": "Proprio",
+    "type": "fixed",
+    "date": "2025-12-03T00:00:00+00:00",
+    "year": 2025,
+    "month": 12,
+    "month_short": "Dec.",
+    "month_long": "December",
+    "day": 3,
+    "day_of_the_week_iso8601": 3,
+    "day_of_the_week_short": "Fer. IV",
+    "day_of_the_week_long": "Feria IV",
+    "readings": {
+      "first_reading": "",
+      "responsorial_psalm": "",
+      "gospel_acclamation": "",
+      "gospel": ""
+    },
+    "psalter_week": 1,
+    "liturgical_season": "ADVENT",
+    "liturgical_season_lcl": "Tempus Adventus"
+  }
+]

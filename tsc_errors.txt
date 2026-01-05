@@ -1,0 +1,7 @@
+.next/dev/types/validator.ts(70,39): error TS2306: File 'C:/Users/obior/OneDrive/Documents/Web design/Ongoing projects/catholic-diocese-of-nsukka/pages/About/page.tsx' is not a module.
+.next/dev/types/validator.ts(79,39): error TS2306: File 'C:/Users/obior/OneDrive/Documents/Web design/Ongoing projects/catholic-diocese-of-nsukka/pages/Contact/page.tsx' is not a module.
+.next/dev/types/validator.ts(88,39): error TS2306: File 'C:/Users/obior/OneDrive/Documents/Web design/Ongoing projects/catholic-diocese-of-nsukka/pages/Departments/departments.tsx' is not a module.
+.next/dev/types/validator.ts(97,39): error TS2306: File 'C:/Users/obior/OneDrive/Documents/Web design/Ongoing projects/catholic-diocese-of-nsukka/pages/Donate/page.tsx' is not a module.
+.next/dev/types/validator.ts(106,39): error TS2306: File 'C:/Users/obior/OneDrive/Documents/Web design/Ongoing projects/catholic-diocese-of-nsukka/pages/Home/page.tsx' is not a module.
+.next/dev/types/validator.ts(115,39): error TS2306: File 'C:/Users/obior/OneDrive/Documents/Web design/Ongoing projects/catholic-diocese-of-nsukka/pages/News/page.tsx' is not a module.
+.next/dev/types/validator.ts(124,39): error TS2306: File 'C:/Users/obior/OneDrive/Documents/Web design/Ongoing projects/catholic-diocese-of-nsukka/pages/Parishes/page.tsx' is not a module.
