@@ -42,6 +42,10 @@ app.use(cors({
     credentials: true
 }));
 
+app.use(cors({
+    origin: 'https://catholic-diocese-of-nsukka.vercel.app'
+}));
+
 // api endpoints
 app.post('/api/login', adminLogin);
 app.use('/api/news', newsRouter);
