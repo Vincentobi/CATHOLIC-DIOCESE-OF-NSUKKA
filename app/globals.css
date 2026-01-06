@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+@theme {
+  /* === colors === */
+  --color-primary: #29a116;
+  --color-gray: #f3faf0;
+  --color-bg-light: #f6f6f8;
+  --color-bg-dark: #111621;
+
+  /* === Border Radius === */
+  --radius: 0.25rem;
+  /* DEFAULT */
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
