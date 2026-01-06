@@ -16,9 +16,14 @@ import parishesRouter from './routes/parish.routes.js';
 // App Configuration
 const app = express();
 const port = process.env.PORT || 8000;
-connectToDB().then(() => {
-    backfillNewsSlugs();
-});
+connectToDB()
+    .then(() => {
+        backfillNewsSlugs().catch(err => console.error("Slugs backfill failed:", err));
+    })
+    .catch((err) => {
+        console.error("Database connection failed:", err.message);
+        process.exit(1); // Kill the process if we can't connect to DB
+    });
 
 // call only if the imported module is a function
 if (typeof cloudinary === 'function') {
