@@ -59,6 +59,10 @@ app.get('/api/getNews', getNews);
 app.delete('/api/removeNews/:id', removeNews);
 app.post('/api/addMultipleNews', addMultipleNews);
 
+app.get('/', (req, res) => {
+    res.send('Diocese of Nsukka API is running');
+});
+
 
 export const backfillNewsSlugs = async () => {
     const newsWithoutSlug = await News.find({ slug: { $exists: false } })
