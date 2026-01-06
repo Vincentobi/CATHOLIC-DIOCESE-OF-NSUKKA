@@ -3,16 +3,12 @@
 # dependencies
 /node_modules
 /.pnp
-<<<<<<< HEAD
 .pnp.*
 .yarn/*
 !.yarn/patches
 !.yarn/plugins  
 !.yarn/releases
 !.yarn/versions
-=======
-.pnp.js
->>>>>>> 37e96ba71189bfedf1ec3aa95872424c23b99c91
 
 # testing
 /coverage
@@ -24,7 +20,6 @@
 # Next.js build & cache
 .next/
 .next/cache/
-
 
 # production
 /build
@@ -39,14 +34,10 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
-=======
-
 # local env files
 .env*.local
 .env
->>>>>>> 37e96ba71189bfedf1ec3aa95872424c23b99c91
+.env*
 
 # vercel
 .vercel

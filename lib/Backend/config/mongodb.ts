@@ -6,7 +6,7 @@ const connectToDB = async (): Promise<void> => {
     });
 
     if (!process.env.MONGODB_URL) {
-        throw new Error('MONGODB_URL is not defined in environment variables');
+        throw new Error('Environment Variable "MONGODB_URL" is missing in Render settings');
     }
 
     await mongoose.connect(process.env.MONGODB_URL, {

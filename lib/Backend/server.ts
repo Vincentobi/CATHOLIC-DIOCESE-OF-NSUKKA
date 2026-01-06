@@ -16,9 +16,14 @@ import parishesRouter from './routes/parish.routes.js';
 // App Configuration
 const app = express();
 const port = process.env.PORT || 8000;
-connectToDB().then(() => {
-    backfillNewsSlugs();
-});
+connectToDB()
+    .then(() => {
+        backfillNewsSlugs().catch(err => console.error("Slugs backfill failed:", err));
+    })
+    .catch((err) => {
+        console.error("Database connection failed:", err.message);
+        process.exit(1); // Kill the process if we can't connect to DB
+    });
 
 // call only if the imported module is a function
 if (typeof cloudinary === 'function') {
@@ -30,9 +35,16 @@ if (typeof cloudinary === 'function') {
 
 // Middlewares
 app.use(express.json());
-const allowedOrigins = [process.env.FRONTEND_URL, 'http://localhost:3000'].filter(Boolean) as string[];
+
+const allowedOrigins = [
+    process.env.FRONTEND_URL,
+    'https://catholic-diocese-of-nsukka.vercel.app',
+    'http://localhost:3000'
+].filter(Boolean) as string[];
+
 app.use(cors({
     origin: (origin, callback) => {
+        // Allow requests with no origin (like mobile apps or curl requests)
         if (!origin || allowedOrigins.includes(origin)) {
             callback(null, true);
         } else {
@@ -40,10 +52,6 @@ app.use(cors({
         }
     },
     credentials: true
-}));
-
-app.use(cors({
-    origin: 'https://catholic-diocese-of-nsukka.vercel.app'
 }));
 
 // api endpoints
@@ -55,6 +63,10 @@ app.use('/api/parishes', parishesRouter);
 app.get('/api/getNews', getNews);
 app.delete('/api/removeNews/:id', removeNews);
 app.post('/api/addMultipleNews', addMultipleNews);
+
+app.get('/', (req, res) => {
+    res.send('Diocese of Nsukka API is running');
+});
 
 
 export const backfillNewsSlugs = async () => {
