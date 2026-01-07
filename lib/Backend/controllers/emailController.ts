@@ -5,13 +5,19 @@ import { generateEmailHtml } from '../utils/emailTemplate.js';
 
 dotenv.config();
 
-// Create a transporter object using the default SMTP transport
+// Create a transporter object using explicit SMTP settings for Gmail
 const transporter = nodemailer.createTransport({
-    service: 'gmail', // You might need to change this depending on the email provider or use host/port
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true, // Use SSL/TLS
     auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS
-    }
+    },
+    // Adding keep-alive and connection timeout for better stability on Render
+    pool: true,
+    maxConnections: 5,
+    maxMessages: 100
 });
 
 export const sendEmail = async (req: Request, res: Response) => {
