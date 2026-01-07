@@ -23,10 +23,10 @@ export const sendEmail = async (req: Request, res: Response) => {
     try {
         const { data, error } = await resend.emails.send({
             from: 'Nsukka Diocese Website <onboarding@resend.dev>', // Use verified domain once set up
-            to: [process.env.EMAIL_USER || 'obiora.v.obi@gmail.com'], // Fallback for testing
+            to: [process.env.EMAIL_USER || 'vincentobiora14@gmail.com'], // Fallback for testing
             subject: subject || `New Inquiry: ${name} (${department})`,
             html: generateEmailHtml({ name, email, phone, department, message }),
-            reply_to: email,
+            replyTo: email,
         });
 
         if (error) {
