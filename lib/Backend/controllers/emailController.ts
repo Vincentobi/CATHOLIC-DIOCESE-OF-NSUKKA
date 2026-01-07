@@ -23,7 +23,7 @@ export const sendEmail = async (req: Request, res: Response) => {
     try {
         const { data, error } = await resend.emails.send({
             from: 'Nsukka Diocese Website <onboarding@resend.dev>', // Use verified domain once set up
-            to: [process.env.EMAIL_USER || 'obioravincent123@gmail.com'], // Fallback for testing
+            to: ['obioravincent123@gmail.com'], // Fallback for testing
             subject: subject || `New Inquiry: ${name} (${department})`,
             html: generateEmailHtml({ name, email, phone, department, message }),
             replyTo: email,
@@ -33,7 +33,7 @@ export const sendEmail = async (req: Request, res: Response) => {
             console.error('Resend Error:', error);
             return res.status(400).json({
                 success: false,
-                message: error.message || 'Failed to send email via Resend.',
+                message: error.message || 'Failed to send email.',
             });
         }
 
