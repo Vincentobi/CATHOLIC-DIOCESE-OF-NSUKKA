@@ -23,7 +23,7 @@ export const sendEmail = async (req: Request, res: Response) => {
     try {
         const { data, error } = await resend.emails.send({
             from: 'Nsukka Diocese Website <onboarding@resend.dev>', // Use verified domain once set up
-            to: [process.env.EMAIL_USER || 'vincentobiora14@gmail.com'], // Fallback for testing
+            to: [process.env.EMAIL_USER || 'obioravincent123@gmail.com'], // Fallback for testing
             subject: subject || `New Inquiry: ${name} (${department})`,
             html: generateEmailHtml({ name, email, phone, department, message }),
             replyTo: email,
@@ -38,7 +38,7 @@ export const sendEmail = async (req: Request, res: Response) => {
         }
 
         console.log(`Email successfully sent via Resend: ${data?.id}`);
-        res.status(200).json({ success: true, message: 'Email sent successfully via Resend' });
+        res.status(200).json({ success: true, message: 'Email sent successfully' });
     } catch (error: unknown) {
         console.error('Unexpected Error:', error);
 
