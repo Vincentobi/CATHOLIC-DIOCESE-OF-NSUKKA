@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import UpcomingEvents_col from '../UpcomingEvents_col'
+import { API_URL } from '@/lib/Backend/api'
 
 
 interface EventItem {
@@ -18,7 +19,7 @@ const UpcomingEvents = () => {
     useEffect(() => {
         const fetchEvents = async () => {
             try {
-                const response = await fetch('http://localhost:8000/api/events/get')
+                const response = await fetch(`${API_URL}/api/events/get`)
                 const data = await response.json()
 
                 if (response.ok && data.data) {
