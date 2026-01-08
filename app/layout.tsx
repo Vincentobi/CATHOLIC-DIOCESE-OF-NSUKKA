@@ -23,13 +23,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_NG",
-    url: "https://catholicdiocesensukka.org",
+    url: "https://catholic-diocese-of-nsukka.vercel.app",
     title: "Catholic Diocese of Nsukka",
     description: "Welcome to the official portal of the Catholic Diocese of Nsukka.",
     siteName: "Catholic Diocese of Nsukka",
     images: [
       {
-        url: "/images/fadaBishop_0.jpg",
+        url: "/images/IHS_Logo.jpg",
         width: 1200,
         height: 630,
         alt: "Catholic Diocese of Nsukka",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Catholic Diocese of Nsukka",
     description: "Official website of the Catholic Diocese of Nsukka.",
-    images: ["/images/fadaBishop_0.jpg"],
+    images: ["/images/IHS_Logo.jpg"],
   },
   robots: {
     index: true,
